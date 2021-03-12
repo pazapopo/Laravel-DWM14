@@ -1,0 +1,12 @@
+td{
+    border: black 2px solid;
+
+}
+table{
+    border: black 2px solid;
+}
+.tableau{
+    display: flex;
+    justify-content: center;
+}
+
