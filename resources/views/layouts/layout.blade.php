@@ -12,7 +12,7 @@
     <header>
         <li><a href="/">Accueil</a></li>
         <li><a href="/list">Liste des Personnages</a></li>
-        <li><a href="/listAuteur">Liste des Auteurs</a></li>
+        <li><a href="/listAuteur">Liste des Dessinateurs</a></li>
         <li><a href="/ajouterPersonnage">Ajouter un Personnage</a></li>
         <li><a href="/ajouterDessinateur">Ajouter un Dessinateur</a></li>
     </header>

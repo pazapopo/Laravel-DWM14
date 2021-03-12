@@ -3,7 +3,7 @@
 ## Récupérer ce projet
 Se mettre dans le dossier souhaité, puis utiliser cette commande :
 ```bash
-git clone https://github.com/jperaudon/laravel_dwm14.git .
+https://github.com/pazapopo/Laravel-DWM14.git.
 ```
 Faire une copie du ```.env.example``` et la nommer ```.env```, puis :
 ```bash
@@ -12,22 +12,28 @@ php artisan migrate --seed
 ```
 
 
-## Exercices
+## Prérequis
 
-### Exo 1
-Créer un Controller : NavController
+- Créer une base de données (peu importe le nom )
+- Aller dans le fichier ```.env``` pour y modifier les lignes suivantes:
+    -  DB_DATABASE='nom_de_votre_DATABASE'
+    -  DB_PASSWORD='votre_mot_de_passe'
+
+## Fonctionnaltitées du site
 
 
-### Exo 2
-- Arriver à ajouter une information dans une vue.
+### Liste des Personnages
+- Visualisé les personnages enregistré dans la base de donnée
+- Il vous est possible de modifier les informations des personnages voir même de les supprimer instantanément.
   
-### Exo 3
-- Ajouter une nouvele page avec un formulaire. Ce formulaire demande votre age. => Formulaire Blade
-- Quand on valide le formulaire, on arrive de nouveau sur une nouvelle page, qui affiche 'Tu as [age] ans !'
+### Liste des Dessinateurs
+- Visualisé les dessinateurs enregistré dans la base de donnée
+- Il vous est possible de modifier les informations des dessinateurs voir même de les supprimer instantanément.
 
-### Exo 4 : séparer les auteurs de la tables "books".
-Vous devrez créer une nouvelle table "author" qui contiendra principalement une colonne "name".
-Il faudra ensuite trouver comment relier les tables books et authors.
-Sachant que chaque livre n'a qu'un seul auteur, mais que les auteurs peuvent avoir écrit plusieurs livres.
-Mettre en place le CRUD des auteurs (update étant optionnel)
-Et princialement : faire en sorte que l'affichage actuel redevienne valide ! (les choix des auteurs se feront via des inputs select)
+### Ajouter un personnage
+-  Vous avez le pouvoir d'ajouter un personnage avec toute les informations nécessaire pour l'enregistrer dans la base de donnée . Bien sur il apparaitra directement dans la liste concernée où vous serez redirigé automatiquement
+
+### Ajouter un dessinateur
+-  Vous avez le pouvoir d'ajouter un dessinateur avec toute les informations nécessaire pour l'enregistrer dans la base de donnée . Bien sur il apparaitra directement dans la liste concernée où vous serez redirigé automatiquement
+
+# BONNE DECOUVERTE EN ESPERANT QUE CELA VOUS PLAISE
