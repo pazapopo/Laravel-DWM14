@@ -25,3 +25,6 @@ Route::get("/updateAuthor/{id}", [NavController::class, 'updateAuthor']);
 Route::post("/updateAuthor", [AuthorController::class, 'update']);
 
 Route::post("/delete", [AuthorController::class, 'delete']);
+
+Route::get("/character/{id}", [NavController::class, 'character']);
+Route::get("/author/{id}", [NavController::class, 'author']);

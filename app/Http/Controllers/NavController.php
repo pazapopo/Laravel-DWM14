@@ -25,7 +25,16 @@ class NavController extends Controller
         $authors = Author::all();  
         return view('listAuteur', compact('authors',));
     }
-
+    public function character($id)
+    {
+        $character = Character::getcharacter($id);
+        return view('character', compact('character'));
+    }
+    public function author($id)
+    {
+        $author = Author::getauthor($id);
+        return view('author', compact('author'));
+    }
     public function ajoutcharacter()
     {
         $authors= Author::all()->sortBy('name');
