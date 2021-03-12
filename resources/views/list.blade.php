@@ -6,7 +6,7 @@
 @section('title','Liste')
 @section('content')
     <div class="fond">
-        <h1>Liste des personnage</h1>
+        <h1>Liste des personnages</h1>
     </div>
     <div class="tableau">
         <table>
