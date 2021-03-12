@@ -24,8 +24,11 @@
                     <td>{{ $character ->id }}</td>
                     <td><a href="/character/{{$character->id}}">{{ $character ->name }}</a></td>
                     <td>{{ $character ->create_year}}</td>
-                    <td>{{ $character ->name_bd}}</td>
+                    <td> {{$character ->name_bd}} </td>
+                    @if (isset( $character ->author->name))
                     <td>{{ $character ->author->name}}</td>
+                    @else <td>Inconnu</td>
+                    @endif
                     <td>
                         <form action="delete" method="POST">
                             @csrf
